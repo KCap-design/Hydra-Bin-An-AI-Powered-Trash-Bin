@@ -1,0 +1,24 @@
+﻿Analyzing Hydra Bin...                                          
+
+warning - The '!' will have no effect because the receiver can't be null - lib\screens\home_screen.dart:451:63 - unnecessary_non_null_assertion
+   info - Unnecessary use of multiple underscores - lib\screens\home_screen.dart:600:41 - unnecessary_underscores
+
+flutter : 2 issues 
+found. (ran in 6.0s)
+At line:1 char:1
++ flutter analyze 
+--no-fatal-infos 2>&1 
+| Out-File -Encoding 
+UTF8 analy ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (2 issues f   
+ ound. (ran in 6.0    
+s):String) [], Re    
+moteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
