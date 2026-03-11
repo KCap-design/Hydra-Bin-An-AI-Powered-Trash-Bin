@@ -1,0 +1,53 @@
+name: hydra_host
+description: Hydra Bin QR Host App - Flutter version
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_firestore: ^4.13.6
+  
+  # QR Code
+  qr_flutter: ^4.1.0
+  
+  # Camera (working version)
+  camera: ^0.10.5+5
+  permission_handler: ^11.1.0
+  
+  # UI
+  cupertino_icons: ^1.0.2
+  
+  # Utils
+  uuid: ^4.3.3
+  tflite_flutter: ^0.12.1
+  mqtt_client: ^10.11.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/model/
+    - assets/model/model.tflite
+    - assets/model/labels.txt
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/Caldruki.jpg"

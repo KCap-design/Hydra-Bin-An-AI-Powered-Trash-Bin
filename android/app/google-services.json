@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "756530453252",
+    "project_id": "hydra-bin",
+    "storage_bucket": "hydra-bin.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756530453252:android:4d48150ce03e4e6e614e51",
+        "android_client_info": {
+          "package_name": "com.hydrabin.hydra_host"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn756TUdxyRR7Gfo7bjqT-gtrU7hfyO9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

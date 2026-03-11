@@ -1,0 +1,59 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Users collection - allow reading for leaderboard and points
+    match /users/{userId} {
+      // Allow anyone to read users for leaderboard
+      allow read: if true;
+      
+      // Allow anyone to create/update users (for points system)
+      allow write: if request.resource.data.keys().hasAll(['points', 'name']) &&
+                    request.resource.data.points is int &&
+                    request.resource.data.name is string;
+    }
+
+    // Sessions collection - for 6-digit pairing system
+    match /sessions/{sessionId} {
+      // Allow anyone to read sessions
+      allow read: if true;
+      
+      // Allow anyone to create sessions (Host app creates these)
+      allow create: if request.resource.data.keys().hasAll(['status', 'connected_user_uid', 'redeemed', 'created_at', 'updated_at']) &&
+                    request.resource.data.status is string &&
+                    request.resource.data.connected_user_uid is string &&
+                    request.resource.data.redeemed is bool &&
+                    request.resource.data.created_at is timestamp &&
+                    request.resource.data.updated_at is timestamp;
+      
+      // Allow anyone to update sessions (Connector app updates status)
+      allow update: if request.resource.data.keys().hasAll(['status', 'updated_at']) &&
+                    request.resource.data.status is string &&
+                    request.resource.data.updated_at is timestamp;
+    }
+
+    // Allow ALL users (including anonymous) to write connection test docs
+    match /connection_tests/{docId} {
+      allow read, write: if true;
+    }
+
+    // Bins collection - legacy support
+    match /bins/{binId} {
+      // Allow reading any bin
+      allow read: if true;
+      
+      // Allow writing to any bin
+      allow write: if true;
+      
+      // Allow reading/writing active_user subcollection
+      match /active_user/{docId} {
+        allow read, write: if true;
+      }
+    }
+
+    // Deny everything else
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

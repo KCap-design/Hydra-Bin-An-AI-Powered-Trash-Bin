@@ -1,0 +1,4 @@
+0 background
+1 biodegradable
+2 landfills
+3 recyclable
