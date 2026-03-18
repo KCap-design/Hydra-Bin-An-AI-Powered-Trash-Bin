@@ -1,4 +1,4 @@
-# 🚮 Hydra Bin: AI-Powered Edge Waste Classifier
+#  Hydra Bin: AI-Powered Edge Waste Classifier
 
 ![Hydra Bin Banner](assets/images/portfolio_banner.png)
 
@@ -8,7 +8,7 @@ Hydra Bin is a high-performance, real-time waste classification system built wit
 
 ---
 
-## 🚀 Advanced Engineering: The Challenge & The Solution
+##  Advanced Engineering: The Challenge & The Solution
 
 Building a real-time AI system on mobile hardware presents significant hurdles. Below are the specific technical challenges I encountered and the custom engineering solutions I designed to overcome them.
 
@@ -36,7 +36,7 @@ Building a real-time AI system on mobile hardware presents significant hurdles. 
 
 ---
 
-## 🛠️ Technical Architecture
+##  Technical Architecture
 
 ### **Current Tech Stack**
 *   **Frontend**: Flutter (Mobile/Guest App)
@@ -53,7 +53,7 @@ Building a real-time AI system on mobile hardware presents significant hurdles. 
 
 ---
 
-## 📈 Impact & Future Roadmap
+##  Impact & Future Roadmap
 Hydra Bin isn't just an app; it's a prototype for a smarter city. By gamifying waste disposal through a points-based system, we encourage sustainable habits.
 
 - [x] High-performance AI Inference Integration
@@ -66,4 +66,4 @@ Hydra Bin isn't just an app; it's a prototype for a smarter city. By gamifying w
 ---
 
 ### Developed by **Kurt Gerfred Caballero**
-*A self-taught enthusiast pushing the boundaries of AI and IoT at age 14.*
+*A self-taught enthusiast pushing the boundaries of AI and IoT at age 16.*
