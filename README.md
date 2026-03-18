@@ -19,7 +19,7 @@
 
 ## 🛠️ Advanced Engineering Deep-Dives
 
-As a 14-year-old developer, I believe in pushing the boundaries of what's possible. Below are two significant engineering challenges I encountered and the "advanced-level" solutions I implemented to solve them.
+As a 16-year-old developer, I believe in pushing the boundaries of what's possible. Below are two significant engineering challenges I encountered and the "advanced-level" solutions I implemented to solve them.
 
 ### 1. The "CORS & Rate-Limit" Bridge (Roblox Integration)
 **The Problem:** Integrating Roblox user authentication and Robux redemption on a web/PWA platform is notoriously difficult due to strict CORS policies and aggressive rate-limiting on Roblox's public API endpoints.
