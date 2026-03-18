@@ -1,0 +1,41 @@
+{
+  "functions": {
+    "source": "functions"
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/assets/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=3600"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      { "source": "/api/roblox-users",  "function": "robloxUsers"  },
+      { "source": "/api/roblox-avatar", "function": "robloxAvatar" },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

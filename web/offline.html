@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline – Hydra Bin</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0D0F1A;
+      color: #F0F4FF;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    /* Animated dot grid */
+    .grid {
+      position: fixed; inset: 0;
+      background-image: radial-gradient(circle, #2A2F45 1px, transparent 1px);
+      background-size: 32px 32px;
+      opacity: 0.5;
+    }
+    .card {
+      position: relative;
+      text-align: center;
+      padding: 48px 40px;
+      max-width: 440px;
+      width: 90%;
+      background: #1A1D2E;
+      border: 1px solid #2A2F45;
+      border-radius: 28px;
+      box-shadow: 0 32px 80px rgba(0,0,0,0.6);
+      animation: fadeIn 0.6s ease;
+    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+    .icon {
+      font-size: 72px;
+      margin-bottom: 20px;
+      display: block;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+    h1 {
+      font-size: 28px;
+      font-weight: 900;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+    p {
+      color: #6B7280;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(239,68,68,0.12);
+      border: 1px solid rgba(239,68,68,0.3);
+      border-radius: 20px;
+      color: #EF4444;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: #EF4444; animation: blink 1.2s infinite; }
+    @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.2; } }
+    button {
+      background: linear-gradient(135deg, #22C55E, #16A34A);
+      color: #000;
+      border: none;
+      border-radius: 14px;
+      padding: 15px 36px;
+      font-size: 15px;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(34,197,94,0.35);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    button:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(34,197,94,0.45); }
+    button:active { transform: none; }
+    .tips {
+      margin-top: 28px;
+      text-align: left;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid #2A2F45;
+      border-radius: 14px;
+      padding: 16px;
+      font-size: 13px;
+      color: #6B7280;
+      line-height: 1.8;
+    }
+    .tips span { color: #F0F4FF; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="card">
+    <span class="icon">🌊</span>
+    <div class="badge"><div class="dot"></div> NO CONNECTION</div>
+    <h1>You're Offline</h1>
+    <p>Hydra Bin couldn't reach the internet right now. Your last viewed data is available, but live updates require a connection.</p>
+    <button onclick="location.reload()">↩ Try Again</button>
+    <div class="tips">
+      <span>Quick Tips:</span><br>
+      • Check your Wi-Fi or mobile data<br>
+      • Try turning airplane mode off and on<br>
+      • Your recycling data is safely preserved<br>
+      • Points sync automatically when you're back online
+    </div>
+  </div>
+</body>
+</html>

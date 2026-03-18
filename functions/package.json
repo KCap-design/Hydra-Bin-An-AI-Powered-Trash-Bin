@@ -1,0 +1,13 @@
+{
+  "name": "hydra-bin-functions",
+  "description": "Roblox API CORS proxy for Hydra Bin",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions"
+  },
+  "engines": { "node": "18" },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.10.1",
+    "firebase-functions": "^4.9.0"
+  }
+}

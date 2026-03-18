@@ -1,0 +1,24 @@
+﻿Analyzing Hydra Bin...                                          
+
+warning - The '!' will have no effect because the receiver can't be null - lib\screens\home_screen.dart:439:63 - unnecessary_non_null_assertion
+   info - The local variable '_x' starts with an underscore - lib\screens\home_screen.dart:588:41 - no_leading_underscores_for_local_identifiers
+
+flutter : 2 issues 
+found. (ran in 44.1s)
+At line:1 char:1
++ flutter analyze 
+--no-fatal-infos 2>&1 
+| Out-File -Encoding 
+UTF8 analy ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (2 issues f   
+ ound. (ran in 44.    
+1s):String) [], R    
+emoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 

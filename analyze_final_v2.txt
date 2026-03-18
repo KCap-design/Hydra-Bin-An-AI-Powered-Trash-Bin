@@ -1,0 +1,23 @@
+﻿Analyzing Hydra Bin...                                          
+
+   info - Use the null-aware marker '?' rather than a null check via an 'if' - lib\screens\home_screen.dart:439:21 - use_null_aware_elements
+
+flutter : 1 issue 
+found. (ran in 8.3s)
+At line:1 char:1
++ flutter analyze 
+--no-fatal-infos 2>&1 
+| Out-File -Encoding 
+UTF8 analy ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (1 issue fo   
+ und. (ran in 8.3s    
+):String) [], Rem    
+oteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
