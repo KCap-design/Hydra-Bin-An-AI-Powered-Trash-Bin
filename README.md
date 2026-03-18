@@ -1,13 +1,13 @@
-# 🌌 Hydra-Bin | AI-Powered Smart Recycling Ecosystem
+#  Hydra-Bin | AI-Powered Smart Recycling Ecosystem
 
 ![Hydra Bin Banner](assets/screenshots/6183712261893984675.jpg)
 
 > **Transforming Waste Management through Gamification and Real-time IoT Integration.**
-> Created by Kurt Gerfred Caballero (CMHS • Creative Tech) - Age 14.
+> Created by Kurt Gerfred Caballero (CMHS • Creative Tech) - Age 16.
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 **Hydra-Bin** is not just a trash bin; it's a high-performance, cloud-integrated ecosystem designed to incentivize environmental responsibility. By combining **Flutter** cross-platform development with a robust **Firebase** backend, Hydra-Bin tracks recycling habits, rewards users with points, and fosters community competition through a real-time global leaderboard.
 
@@ -17,7 +17,7 @@
 
 ---
 
-## 🛠️ Advanced Engineering Deep-Dives
+##  Advanced Engineering Deep-Dives
 
 As a 16-year-old developer, I believe in pushing the boundaries of what's possible. Below are two significant engineering challenges I encountered and the "advanced-level" solutions I implemented to solve them.
 
@@ -57,7 +57,7 @@ Future<http.Response?> _robloxGet(String pathOrFullUrl) async {
 
 ---
 
-## 🎨 Visual Journey
+##  Visual Journey
 
 | Desktop/Web View | Mobile Interface |
 | :---: | :---: |
@@ -68,7 +68,7 @@ Future<http.Response?> _robloxGet(String pathOrFullUrl) async {
 
 ---
 
-## ✨ Features at a Glance
+##  Features at a Glance
 
 - 🏆 **Global Leaderboard**: Competitive ranking with medal tiers (Gold, Silver, Bronze).
 - 🎁 **Redemption Store**: Swap points for digital assets like Roblox currency (Robux).
@@ -78,7 +78,7 @@ Future<http.Response?> _robloxGet(String pathOrFullUrl) async {
 
 ---
 
-## 📈 My Technical Growth
+##  My Technical Growth
 
 This project represents hundreds of hours of debugging and learning. From mastering asynchronous programming in Dart to designing secure Firestore security rules, Hydra-Bin has been my primary vehicle for professional development. I am passionate about using technology to solve real-world problems.
 
