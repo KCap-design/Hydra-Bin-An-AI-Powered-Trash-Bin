@@ -85,4 +85,4 @@ This project represents hundreds of hours of debugging and learning. From master
 ---
 
 **Hydra-Bin © 2026**  
-*Built with ❤️ and ☕ by a young innovator.*
+*Built By Kurt Gerfred Caballero*
